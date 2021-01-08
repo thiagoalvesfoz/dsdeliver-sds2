@@ -1,14 +1,10 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/home";
+import Routes from "./routes";
 import "./global.css";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Footer />
+      <Routes />
     </>
   );
 }

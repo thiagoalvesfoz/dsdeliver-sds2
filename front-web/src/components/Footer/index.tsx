@@ -1,22 +1,24 @@
-import "./styles.css";
 import { ReactComponent as YoutubeIcon } from "./youtube.svg";
 import { ReactComponent as LinkedinIcon } from "./linkedin.svg";
 import { ReactComponent as InstagramIcon } from "./instagram.svg";
+import { Link } from "react-router-dom";
+import "./styles.css";
 
 export default function Footer() {
   return (
     <footer className="main-footer">
-      App desenvolvido durante a 2ª ed. do evento Semana DevSuperior
+      App desenvolvido durante a 2ª ed. do evento
+      <strong> Semana DevSuperior</strong>
       <div className="footer-icons">
-        <a href="#youtube" target="_blank">
+        <Link to="#youtube" target="_blank">
           <YoutubeIcon />
-        </a>
-        <a href="#likedin" target="_blank">
+        </Link>
+        <Link to="#likedin" target="_blank">
           <LinkedinIcon />
-        </a>
-        <a href="#instagram" target="_blank">
+        </Link>
+        <Link to="#instagram" target="_blank">
           <InstagramIcon />
-        </a>
+        </Link>
       </div>
     </footer>
   );
