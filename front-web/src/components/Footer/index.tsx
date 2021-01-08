@@ -12,13 +12,13 @@ export default function Footer() {
         <strong> Semana DevSuperior</strong>
       </span>
       <div className="footer-icons">
-        <Link to="#youtube" target="_blank">
+        <Link to="https://youtube.com/devsuperior" target="_blank">
           <YoutubeIcon />
         </Link>
-        <Link to="#likedin" target="_blank">
+        <Link to="https://www.linkedin.com/school/devsuperior/" target="_blank">
           <LinkedinIcon />
         </Link>
-        <Link to="#instagram" target="_blank">
+        <Link to="https://www.instagram.com/devsuperior.ig/" target="_blank">
           <InstagramIcon />
         </Link>
       </div>
