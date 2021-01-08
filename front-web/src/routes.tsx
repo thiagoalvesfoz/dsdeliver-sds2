@@ -1,11 +1,9 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
-//component
 import HeaderNavbar from "./components/navbar";
 import Footer from "./components/footer";
 
-//pages
 import Home from "./pages/home";
 import Orders from "./pages/orders";
 
