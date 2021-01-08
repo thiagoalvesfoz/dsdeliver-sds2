@@ -7,8 +7,10 @@ import "./styles.css";
 export default function Footer() {
   return (
     <footer className="main-footer">
-      App desenvolvido durante a 2ª ed. do evento
-      <strong> Semana DevSuperior</strong>
+      <span>
+        App desenvolvido durante a 2ª ed. do evento
+        <strong> Semana DevSuperior</strong>
+      </span>
       <div className="footer-icons">
         <Link to="#youtube" target="_blank">
           <YoutubeIcon />

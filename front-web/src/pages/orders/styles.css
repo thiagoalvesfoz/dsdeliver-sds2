@@ -1,5 +1,6 @@
 .orders-container {
   background-color: var(--light-color);
+  margin-bottom: 60px;
 }
 
 .orders-container h3 {
@@ -58,7 +59,7 @@
 .orders-list-items {
   width: 70%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 235px);
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
   grid-gap: 20px 15px;
   justify-content: space-between;
 }
@@ -266,6 +267,10 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    width: 90%;
+  }
+
+  .orders-list-items {
     width: 90%;
   }
 
