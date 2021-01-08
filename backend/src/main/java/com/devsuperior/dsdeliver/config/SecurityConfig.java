@@ -3,6 +3,7 @@ package com.devsuperior.dsdeliver.config;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -30,6 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests().anyRequest().permitAll();
 	}
 	
+	@Bean
 	CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration configuration = new CorsConfiguration().applyPermitDefaultValues();
 		configuration.setAllowedMethods(Arrays.asList("POST", "GET", "PUT", "DELETE", "OPTIONS"));
