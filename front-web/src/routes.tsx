@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
-import HeaderNavbar from "./components/navbar";
-import Footer from "./components/footer";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/home";
 import Orders from "./pages/orders";
@@ -32,7 +32,7 @@ export default function routes() {
   return (
     <BrowserRouter>
       <AnimatePresence>
-        <HeaderNavbar />
+        <Navbar />
         <motion.div
           initial="initial"
           animate="in"
