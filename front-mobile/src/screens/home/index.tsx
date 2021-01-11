@@ -3,6 +3,8 @@ import { Text, View, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { RectButton } from "react-native-gesture-handler";
 import styles from "./styles";
+
+//components
 import Header from "../../components/header";
 
 export default function Home() {

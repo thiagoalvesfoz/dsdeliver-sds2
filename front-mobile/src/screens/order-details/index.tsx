@@ -1,11 +1,13 @@
 import React from "react";
 import { Alert, Linking, StyleSheet, View } from "react-native";
 import { confirmDelivery } from "../../api";
+import { useNavigation } from "@react-navigation/native";
+import { Order } from "../../types";
+
+//components
 import Button from "../../components/button";
 import Header from "../../components/header";
 import OrderCard from "../../components/order-card";
-import { Order } from "../../types";
-import { useNavigation } from "@react-navigation/native";
 
 type Props = {
   route: {
